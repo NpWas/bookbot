@@ -1,3 +1,10 @@
+book = 'books/frankenstein.txt'
+
+with open(book) as f:
+        frankenstein = f.read()
+    
+       
+    
 
 
 def count_words(file_contents):
@@ -5,13 +12,15 @@ def count_words(file_contents):
         
     return wordcount
 
-def main():  
-    book = 'books/frankenstein.txt'
-    
-       
-    
-    with open(book) as f:
-        frankenstein = f.read()
+
+
+#def count_characters():
+
+
+
+def main():
+    count_words(frankenstein)  
+  
 
     print(f"There are {count_words(frankenstein)} in frankenstein")
 
